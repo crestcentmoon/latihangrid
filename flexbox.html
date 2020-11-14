@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexxx</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: whitesmoke;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            border: 5px solid #333;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+
+        header {
+            background-color: teal;
+            padding: 40px 0;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        .sidebar aside {
+            background-color: skyblue;
+            padding: 60px 0;
+        }
+
+        .sidebar nav {
+            background-color: slategray;
+            padding: 100px 0;
+        }
+
+        main {
+            background-color: plum;
+            box-sizing: border-box;
+            padding: 173px;
+            flex: 1;
+        }
+
+        footer {
+            background-color: rosybrown;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <div class="content">
+            <div class="sidebar">
+                <aside>Aside</aside>
+                <nav>Nav</nav>
+            </div>
+            <main>Main</main>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
